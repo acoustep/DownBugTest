@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		40609D8E25C57547005028DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40609D8C25C57547005028DD /* Main.storyboard */; };
 		40609D9A25C57547005028DD /* DownTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40609D9925C57547005028DD /* DownTestTests.swift */; };
 		40609DA525C57547005028DD /* DownTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40609DA425C57547005028DD /* DownTestUITests.swift */; };
+		40609DBF25C57612005028DD /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 40609DBE25C57612005028DD /* Down */; };
+		40609DC425C57680005028DD /* README-sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 40609DC325C57680005028DD /* README-sample.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		40609DA025C57547005028DD /* DownTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40609DA425C57547005028DD /* DownTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownTestUITests.swift; sourceTree = "<group>"; };
 		40609DA625C57547005028DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40609DC325C57680005028DD /* README-sample.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-sample.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40609DBF25C57612005028DD /* Down in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				40609D8C25C57547005028DD /* Main.storyboard */,
 				40609D8F25C57547005028DD /* Info.plist */,
 				40609D9025C57547005028DD /* DownTest.entitlements */,
+				40609DC325C57680005028DD /* README-sample.md */,
 			);
 			path = DownTest;
 			sourceTree = "<group>";
@@ -140,6 +145,9 @@
 			dependencies = (
 			);
 			name = DownTest;
+			packageProductDependencies = (
+				40609DBE25C57612005028DD /* Down */,
+			);
 			productName = DownTest;
 			productReference = 40609D8325C57546005028DD /* DownTest.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +219,9 @@
 				Base,
 			);
 			mainGroup = 40609D7A25C57546005028DD;
+			packageReferences = (
+				40609DBD25C57612005028DD /* XCRemoteSwiftPackageReference "Down" */,
+			);
 			productRefGroup = 40609D8425C57546005028DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40609DC425C57680005028DD /* README-sample.md in Resources */,
 				40609D8B25C57547005028DD /* Assets.xcassets in Resources */,
 				40609D8E25C57547005028DD /* Main.storyboard in Resources */,
 			);
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40609DBD25C57612005028DD /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnxnguyen/Down";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40609DBE25C57612005028DD /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40609DBD25C57612005028DD /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40609D7B25C57546005028DD /* Project object */;
 }
